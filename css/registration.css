@@ -7,6 +7,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.mg-25 { margin: 10px 25px }
+#main-heading { font-size: 3rem; }
+
 nav{
   position: sticky;
   top: 0;
@@ -123,6 +126,17 @@ form input{
 }
 
 a{
-    color: rgb(29, 195, 200);
+    color: #4070f4;
     font-weight: 800;
 }
+footer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    transition: all 0.4s ease;
+    background-color: rgb(100, 10, 10);
+    color: white;
+    text-align: center;
+}
+
