@@ -324,3 +324,11 @@ footer {
     text-align: center;
 }
 
+footer p {
+    margin: 0;
+}
+
+footer h2 {
+    margin: 0;
+}
+

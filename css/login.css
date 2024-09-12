@@ -69,7 +69,6 @@ nav .logo a{
     border-radius: 9px;
     background-color: #cccccc;
     border: 1px solid black
-
 }
 
 h1{
@@ -123,7 +122,8 @@ form input{
     padding: 2rem;
 }
 footer {
-    top: 0;
+    position: absolute;
+    bottom: 0;
     left: 0;
     width: 100%;
     padding: 20px;
