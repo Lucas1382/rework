@@ -126,3 +126,7 @@ a{
     color: rgb(29, 195, 200);
     font-weight: 800;
 }
+#name-error, #password-error, #number-error, #address-error,  #password-error, #con-password-error, #birthday-error{
+  color: red;
+  margin-top: 4px;
+}

@@ -101,8 +101,9 @@ form input{
 }
 
 #button{
-    width: 410px;
-    height: 42px;
+  border-radius: 15px;
+    width: 400px;
+    height: 35px;
     margin-top: 27px;
     background-color: rgb(110,10,10);
     color: white;
