@@ -332,3 +332,32 @@ footer h2 {
     margin: 0;
 }
 
+#if-other-name {
+    display: none;
+}
+
+#other-name-label {
+    font-weight: bold;
+}
+
+#other-name {
+    border: 1px solid black;
+}
+
+.confirmation input{
+    transform: translateY(10%);
+    scale: 0.7;
+    margin-right: 0.5rem;
+}
+
+.confirmation span {
+    color: red;
+}
+
+.warning {
+    color: red;
+}
+
+.disabled {
+    cursor: disabled !important;
+}

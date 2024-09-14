@@ -99,13 +99,17 @@
             <h4>Do you hold or have you ever held a license to drive or ride or a Photo Card/Proof Age Card in the above or in another name?</h4>
             <div class="input-group-radio">
                 <div class="option">
-                    <input type="radio" id="license-yes" name="license_status" value="yes" required>
-                    <label for="license-yes">Yes</label>
+                    <input type="radio" id="other-name-yes" name="other-name_status" value="yes" required>
+                    <label for="other-name-yes">Yes</label>
                 </div>
                 <div class="option">
-                    <input type="radio" id="license-no" name="license_status" value="no">
-                    <label for="license-no">No</label>
+                    <input type="radio" id="other-name-no" name="other-name_status" value="no">
+                    <label for="other-name-no">No</label>
                 </div>
+            </div>
+            <div class="input-group" id="if-other-name">
+                <label for="other-name" id="other-name-label">Other name</label>
+                <input type="text" id="other-name" name="other-name">
             </div>
         </div>
 
@@ -174,7 +178,13 @@
             </div>
         </div>
 
-        <input type="submit" class="submit-btn" value="Submit">
+        <p class="warning">Form can be submitted only once you agree to the details.</p>
+        <div class="confirmation input-group">
+            <label><input type="checkbox" id="agree-checkbox"> I agree to the details above</label>
+            <p><span>X</span> Please agree detail</p>
+        </div>
+
+        <input type="submit" class="submit-btn disabled" value="Submit">
     </form>
     <footer>
         <h2>Hotline</h2>
