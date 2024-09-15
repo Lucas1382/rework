@@ -9,48 +9,76 @@ body{
 }
 
 nav{
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  transition: all 0.4s ease;
-  background-color: rgb(100, 10, 10);
-}
-
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    transition: all 0.4s ease;
+    background-color: rgb(100, 10, 10);
+  }
+  
 nav .nav-content{
-  height: 100%;
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav .logo a{
+    font-weight: 500;
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-content .nav-links{
+    display: flex;
+  }
+  .nav-content .nav-links li{
+    list-style: none;
+    margin: 0 8px;
+  }
+   .nav-links li a{
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 4px;
+    transition: all 0.3s ease;
+  }
+   .nav-links li a:hover, .dropdown:hover, button:hover{
+     color: #4070f4;
+   }
+.dropdown{
+    display: inline-block;
+    position: relative;
 }
 
-nav .logo a{
-  font-weight: 500;
-  font-size: 35px;
-  color: white;
-  text-decoration: none;
+.dropdown-options {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+.dropdown .dropdown-options a{
+    display: block;
+    padding: 10px 15px;
+    color: red;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(97, 68, 68, 0.1);
+    background-color: white;
+    transition: all 0.3s ease;                                                               
 }
 
-.nav-content .nav-links{
-  display: flex;
+.dropdown:hover .dropdown-options {
+    display: block;
 }
-.nav-content .nav-links li{
-  list-style: none;
-  margin: 0 8px;
-}
- .nav-links li a{
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 10px 4px;
-  transition: all 0.3s ease;
-}
-.nav-links li a:hover{
-   color: #4070f4;
+
+.dropdown .dropdown-options a:hover{
+    background-color:  #4070f4;
+    color: white;
 }
 
 .signup{
