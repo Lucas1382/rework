@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Customer Account Registration | Southern Coastland Roads Authority</title>
+    <link rel="stylesheet" href="./css/registration.css">
+    <script src="./js/registraton.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#">MPS Logo</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./HomePage.html">Home</a></li>
+                <li><a href="./MPS_Conditions.html">About</a></li>
+                <li><a href="./">Services</a></li>
+                <li><a href="./login.html">Log in</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="signup">
+        <h1>Sign Up</h1>
+        <h5>Welcome to the Southern Coastland Roads Authority! Please fill out the form below to create your customer account</h5>
+        <form id="signup-form">
+            <div class="input-field">
+                <label>Full Name</label>
+                <img src="image/person-solid.svg" alt="Full name" style="width: 13px;height: 13px;">
+                <input type="text" id="name" placeholder="Enter Full name">
+                <p id="name-error"></p>
+            </div>
+            <div class="input-field">
+                <label>Email Address</label>
+                <img src="image/envelope-solid.svg" alt="Email" style="width: 13px;height: 13px;">
+                <input type="email" id="email" placeholder="Email Address">
+                <p id ="email-error"></p>
+            </div>
+            <div class="input-field">
+                <label>Contact Number</label>
+                <img src="image/phone-solid.svg" alt="Email" style="width: 13px;height: 13px;">
+                <input type="tel" id="contact-number" placeholder="Enter Contact Number">
+                <p id="number-error"></p>
+            </div>
+            <div class="input-field">
+                <label>Residential Address</label>
+                <img src="image/house-solid.svg" alt="Email" style="width: 13px;height: 13px;">
+                <input type="text" id ="address" placeholder="Enter Residential Address">
+                <p id="address-error"></p>
+            </div>
+            <div class="input-field">
+                <label>Date of Birth</label>
+                <img src="image/calendar-days-solid.svg" alt="Email" style="width: 13px;height: 13px;">
+                <input type="date" id="birth-day">
+                <p id="birthday-error"></p>
+            </div>
+            <div class="input-field">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter Password">
+                <p id="password-error"></p>
+            </div>
+            <div class="input-field">
+                <label>Confirm Password</label>
+                <input type="password" id="con-password" placeholder="Confirm Password">
+                <p id="con-password-error"></p>
+            </div>
+            <input id="button" type="submit" value="Submit">
+        </form>
+        <p id="terms">By clicking The Complete Registration button , you agree to our <br> 
+        <a href="https://en.wikipedia.org/wiki/Lorem_ipsum">Terms and condition </a> and <a href="https://en.wikipedia.org/wiki/Lorem_ipsum">Privacy and Policy</a></p>
+        <p id="iflogin">Already have an account ? <a href="login.html">Click Here</a> to login</p>
+    </div>
+
+</body>
+</html>
