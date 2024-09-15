@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>MPS Permit Form</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#">MPS Logo</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Log in</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <form id="userform" action="submit_url" method="POST" class="form-container">
+        <h1 class="main-heading">MPS Permit Form</h1>
+        <h2 class="subsection-title">1. Permit Information</h2>
+        <div class="input-group">
+            <h4>Type of MPS permit needed</h4>
+            <div class="input-group-radio">
+                <div class="option">
+                    <input type="radio" id="individual" name="permit_type" value="individual" required>
+                    <label for="individual">Individual</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="temporary" name="permit_type" value="temporary">
+                    <label for="temporary">Temporary</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <h4>Type of Application</h4>
+            <div class="input-group-radio">
+                <div class="option">
+                    <input type="radio" id="new" name="application_type" value="new" required>
+                    <label for="new">New</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="renewal" name="application_type" value="renewal">
+                    <label for="renewal">Renewal</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="replacement" name="application_type" value="replacement">
+                    <label for="replacement">Replacement</label>
+                </div>
+            </div>
+                <div id="if-replace" class="hidden">
+                    <h3 id="replacement-reason-heading">Reason for replacement</h3>
+                    <div class="replace-reason-container">
+                        <div class="reason-item">
+                            <div class="option">
+                                <input type="radio" id="lost" name="replace_reason">
+                                <label for="lost">Lost</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="stolen" name="replace_reason">
+                                <label for="stolen">Stolen</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="damaged" name="replace_reason">
+                                <label for="damaged">Damaged</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="defaced" name="replace_reason">
+                                <label for="defaced">Defaced</label>
+                            </div>
+                        </div>
+                        <div class="reason-item">
+                            <div class="option">
+                                <input type="radio" id="confiscated" name="replace_reason">
+                                <label for="confiscated">Confiscated</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="change-details" name="replace_reason">
+                                <label for="change-detail">Change details including appearance</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="non-receipt-permit" name="replace_reason">
+                                <label for="non-receipt-permit">Non receipt or permit</label>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <h2 class="subsection-title">2. License Information</h2>
+
+        <div class="input-group">
+            <h4>Do you hold or have you ever held a license to drive or ride or a Photo Card/Proof Age Card in the above or in another name?</h4>
+            <div class="input-group-radio">
+                <div class="option">
+                    <input type="radio" id="other-name-yes" name="other-name_status" value="yes" required>
+                    <label for="other-name-yes">Yes</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="other-name-no" name="other-name_status" value="no">
+                    <label for="other-name-no">No</label>
+                </div>
+            </div>
+            <div class="input-group" id="if-other-name">
+                <label for="other-name" id="other-name-label">Other name</label>
+                <input type="text" id="other-name" name="other-name">
+            </div>
+        </div>
+
+        <h2 class="subsection-title">3. Do any of the following statements apply to you?</h2>
+        <div class="input-group">
+            <h4>(a) You hold a current or suspended license</h4>
+            <div class="input-group-radio">
+                <div class="option">
+                    <input type="radio" id="suspended-yes" name="suspended-status" value="yes" required>
+                    <label for="suspended-yes">Yes</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="suspended-no" name="suspended-status" value="no">
+                    <label for="suspended-no">No</label>
+                </div>
+            </div>
+        </div>
+
+        <div id="if-suspended">
+            <div class="inline-group">
+                <div class="input-group">
+                    <label for="license-number" class="block-label">License number</label>
+                    <input type="text" id="license-number" name="license_number" placeholder="Your license number">
+                </div>
+                <div class="input-group">
+                    <label for="license-class" class="block-label block">License class</label>
+                    <select name="license-class" id="license-class">
+                        <option value="a">A</option>
+                        <option value="a1">A1</option>
+                        <option value="b">B</option>
+                        <option value="be">BE</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="expiry-date" class="block-label block">Expiry Date</label>
+                    <input type="date" id="expiry-date" name="expiry_date">
+                </div>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <h4>(b) Your license is subject to medical review by RM (including older driver review)</h4>
+            <div class="input-group-radio">
+                <div class="option">
+                    <input type="radio" id="review-yes" name="review-status" required value="yes">
+                    <label for="review-yes">Yes</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="review-no" name="review-status" value="no">
+                    <label for="suspended-no">No</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <h4>(c) You have additional medical condition to report to RMS.</h4>
+            <div class="input-group-radio">
+                <div class="option">
+                    <input type="radio" id="medical-addition-yes" name="medical-addition-status" value="yes" required>
+                    <label for="medical-addition-yes">Yes</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="medical-addition-no" name="medical-addition-status" value="no">
+                    <label for="medical-addition-no">No</label>
+                </div>
+            </div>
+        </div>
+
+        <p class="warning">Form can be submitted only once you agree to the details.</p>
+        <div class="confirmation input-group">
+            <label><input type="checkbox" id="agree-checkbox"> I agree to the details above</label>
+            <p><span>X</span> Please agree detail</p>
+        </div>
+
+        <input type="submit" class="submit-btn disabled" value="Submit">
+    </form>
+    <footer>
+        <h2>Hotline</h2>
+        <p>Abuse of the MPS can be reported by phoning 1300 STOPIT</p>
+    </footer>
+
+</body>
+<script src="./js/userform.js"> </script>
+
+</html>
+

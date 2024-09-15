@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    background-color: #e2e8f0;
+}
+
+.container {
+    margin: 0 6rem;
+    margin-top: 1.2rem;
+}
+
+nav{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.4s ease;
+  background-color: rgb(100, 10, 10);
+}
+
+nav .nav-content{
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a{
+  font-weight: 500;
+  font-size: 35px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-content .nav-links{
+  display: flex;
+}
+.nav-content .nav-links li{
+  list-style: none;
+  margin: 0 8px;
+}
+ .nav-links li a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 4px;
+  transition: all 0.3s ease;
+}
+ .nav-links li a:hover{
+   color: #4070f4;
+ }
+
+h3, strong{
+    color: black;
+}
+
+h3{
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin: 1rem 0 1rem 0;
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    clear: both;
+    border: 1px solid;
+    background-color: rgb(100,10,10);
+    margin: 0 20px;
+    padding: 3rem;
+}
+
+section{
+    background-color: white;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    clear: both;
+    margin: 2rem;
+    text-align: justify;
+}
+
+section h2 {
+    font-size: 2.1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+em {
+    color: black;
+    font-size: 1.2rem;
+}
+
+ul{
+    padding: 0.5rem auto;
+    margin-left: 4rem;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    list-style: square;
+    line-height: 2rem;
+}
+
+sub-nav a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+sub-nav a:hover{
+    color:#4070f4;
+}
+
+sub-nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    margin: 20px;
+    background-color: rgb(100, 10, 10);
+    border: 1px solid;
+}
+
+sub-nav ul li{
+    list-style-type: none;
+    padding-left: 15px;
+    display: inline;
+}
+
+footer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    transition: all 0.4s ease;
+    background-color: rgb(100, 10, 10);
+    color: white;
+    text-align: center;
+}
+
