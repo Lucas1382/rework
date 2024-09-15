@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Login | Southern Coastland Roads Authority</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="./js/login.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#">MPS Logo</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./HomePage.html">Home</a></li>
+                <li><a href="./MPS_Conditions.html">About</a></li>
+                <li><a href="./">Services</a></li>
+                <li><a href="./login.html">Log in</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="loginform">
+        <form id="login-form" action="submit-url" method="post">
+            <h1>Account Login</h1>
+            <h5>Welcome Back!</h5>
+            <div class="input-field">
+                <label>Email Adress</label> 
+                <img src="image/envelope-solid.svg" alt="Email Adress" style="width: 13px;height: 13px;">
+                <input type="email" id ="email" placeholder="Enter Email Address">
+                <p id="email-error" style="color: red; margin: 4px"></p>
+            </div>
+            <div class="input-field">
+                <label for="password">Password</label> 
+                <input type="password" id="password" placeholder="Enter Password">
+                <p id="password-error" style="color: red; margin: 4px"></p>
+            </div>
+            <input type="submit" id="button" value="Submit">
+        </form>
+        <p id="ifRegister">Dont Have Account? <a href="registrationForm.html">Click Here</a> to Sign Up</p>
+    </div>
+</body>
+</html>
